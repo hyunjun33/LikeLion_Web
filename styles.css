@@ -1,0 +1,32 @@
+
+<style>
+h1 {
+	color:Tomato;
+}
+
+h6 {
+	color:yellow;
+}
+
+h3 {
+	color:orange;
+}
+
+p {
+	color:blue; background-color:Tomato;
+}
+
+#firstParagraph {
+	background-color:lightblue;
+	color:black;
+	padding:40px;
+	text-align:center;
+}
+
+#secondParagraph {
+	background-color:black;
+	color:white;
+}
+
+
+</style>
