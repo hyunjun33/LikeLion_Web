@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+     function Myfunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+
+     function Change_color(id, color) {
+        document.getElementById(id).style.color = color
+      }
+    </script>
+
+</head>
+<body>
+    <h1>A Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <p id="p_test">출력 확인</p>
+    <p id="p_test2">출력 확인2</p>
+    <button type="button" onclick="Myfunction()">Try it</button>
+    <button type="button" onclick="Change_color('p_test2', 'green')">Click here</button>
+    <script>
+      var txt = "I can eat bananas all day";
+      var x = txt.slice(0, 10);
+      var y = txt.slice(10,);
+
+
+
+      alert("from 0 to 9: " + x);
+      document.write("from 10 to end: " + y);
+
+      var txt2 = "Hello World";
+      var z = txt2.replace("Hello", "Welcome");
+      alert("'Hello World'" + "\n" + "change to welcome :" + z)
+
+      var languages = ["HTML", "CSS", "Javascript"];
+      document.getElementById('p_test').innerHTML = languages[2];
+
+
+
+    </script>
+</body>
+</html>

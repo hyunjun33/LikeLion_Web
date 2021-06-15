@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    var a = 11111;
+    var b = 5;
+    alert(a * b);
+
+    function multiplication(num1, num2) {
+    return num1 * num2
+    }
+
+    result = multiplication(a, b)
+
+    function addition(num1, num2) {
+    total = num1 + num2
+    return total
+    }
+
+    </script>
+</head>
+<body>
+<p id="p_date">현재 시각</p>
+<p id="p_number">100</p>
+<p id="p_addition">더하기 연산</p>
+
+<button type="button" onclick="document.getElementById('p_date').innerHTML = Date()">
+  클릭하면 날짜와 시간이 보인다</button>
+<button type="button" onclick="document.getElementById('p_number').innerHTML = result">
+  클릭하면 연산 실행
+</button>
+<button type="button" onclick="document.getElementById('p_addition').innerHTML = addition(a, b)">
+  클릭하면 더하기
+</button>
+</body>
+</html>

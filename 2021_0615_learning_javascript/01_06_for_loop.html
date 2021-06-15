@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+  <p id="practice"></p>
+  <script>
+    var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+    var text = "";
+    var i;
+    for (i=0; i<cars.length; i++) {
+      text += cars[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+
+    var fruits = ["포도", "사과", "토마토"];
+    var result = "";
+    var j;
+    for (j=0; j<fruits.length; j++) {
+      result += fruits[j] + "<br>";
+    }
+    document.getElementById("demo2").innerHTML = result;
+
+  </script>
+</body>
+</html>

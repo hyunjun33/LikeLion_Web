@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      function Start_func() {
+        return "시작"
+      }
+
+      function Greet() {
+        alert("Hello world!")
+      }
+
+      document.write(Start_func());
+
+      function Click() {
+        document.getElementById("table_info").innerHTML = "클릭되었습니다."
+      }
+
+    </script>
+</head>
+<body>
+<button onclick="Greet()">안녕하세요</button>
+<div id="section" onmouseover="this.style.backgroundColor='orange'" onmouseout="this.style.backgroundColor='blue'">
+    여기 색깔이 변경된다.
+</div>
+<table id="table_info" onclick="Click()" onmouseover="this.style.color='blue'">
+    <tr>
+      <th>HTML</th><th>CSS</th><th>Javascript</th>
+    </tr>
+    <tr>
+        <td>위에 언어를 클릭하면 '클릭되었습니다.'라는 문장으로 변경됩니다.</td>
+    </tr>
+</table>
+</body>
+</html>

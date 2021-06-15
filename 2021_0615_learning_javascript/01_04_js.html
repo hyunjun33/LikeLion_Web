@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    // 단락 부분 내용 변경
+    function myFnc3(){
+    var inputText = document.getElementById("my_input").value;
+    document.getElementById("demo").innerHTML = inputText;
+    document.getElementById("demo2").innerHTML = inputText;
+    }
+
+  </script>
+</head>
+
+<body>
+  <p id="demo">내용1</p>
+  <p id="demo2">내용2</p>
+  <script src="./myScript.js"></script>
+  <script src="./myScript2.js"></script>
+  <button type="button" onclick="myFnc()">버튼 선택</button>
+  <button type="button" onclick="myFnc2()">버튼 선택2</button>
+  <input type="text" placeholder="변경할 내용을 입력하세요." id="my_input">
+  <button type="button" onclick="myFnc3()">입력 버튼</button>
+
+  <div id="user_info">
+      <p>First Name: <input type="text" id="first_name"></p>
+      <p>Last Name: <input type="text" id="last_name"></p>
+      <p>Email: <input type="text" id="email"></p>
+      <p>User Id: <input type="text" id="user_id"></p>
+      <p>Password: <input type="text" id="pw"></p>
+      <p>Confirm Password: <input type="text" id="confirm_pw"></p>
+  </div>
+
+
+</body>
+
+</html>
